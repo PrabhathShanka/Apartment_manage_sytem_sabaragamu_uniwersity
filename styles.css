@@ -1,0 +1,192 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Hero Section Styles */
+
+.hero {
+    background-image: url("hero-bg.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+
+/* Search Bar Styles */
+
+.search-bar {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="number"] {
+    padding: 0.5rem;
+    width: 200px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Featured Apartments Styles */
+
+.featured-apartments {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.apartment-list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.apartment {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 300px;
+}
+
+.apartment img {
+    width: 100%;
+    height: auto;
+}
+
+.apartment h4 {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.apartment p {
+    margin-bottom: 1rem;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+/* Search Section Styling */
+
+.search-bar {
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* Light background for contrast */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for depth */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.search-bar h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-bar form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}

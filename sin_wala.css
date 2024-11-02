@@ -1,0 +1,62 @@
+body {
+  font-family: Calibri, sans-serif;
+  background: #fdebdb;
+}
+
+.h1-t1{
+  color: rgb(106, 58, 58);
+  text-align: center;
+}
+
+.carousel-image {
+  height: 500px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.h2-fa{
+  color: red;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.fc-img{
+  height: 200px;
+  width: 200px;
+}
+
+.des-p{
+  background-color: rgb(220, 220, 220);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-hostels-h1{
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.main-hostels-btn{
+  height: 150px;
+  width: 150px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(168, 222, 222);
+  border-radius: 15px;
+  transition: 0.2s;
+  border: 0;
+  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-hostels-btn:hover{
+  transform: scale(1.1);
+}
+
+.footer {
+  background: #333;
+  color: #fdebdb;
+  padding: 20px 0;
+  text-align: center;
+}
+

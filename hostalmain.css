@@ -1,0 +1,132 @@
+body {
+    font-family: Calibri, sans-serif;
+    background: #fdebdb;
+}
+
+.hero-section{
+    background: url("image/all.jpg") no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1{
+    color: #710202; 
+}
+
+.hero-content {
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.ctg-btnh{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(143, 119, 91);
+    font-weight: bold;
+    border-color: rgb(143, 119, 91);;
+    transition: 200ms;
+    font-size: 32px;
+    background-image: url("image/btnh.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(241, 199, 162);
+    -webkit-text-stroke: 1.5px rgb(80, 66, 66) ;
+   
+}
+
+.ctg-btnb{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(143, 119, 91);
+    font-weight: bold;
+    border-color: rgb(143, 119, 91);;
+    transition: 200ms;
+    font-size: 32px;
+    background-image: url("image/btnbo.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(241, 199, 162);
+    -webkit-text-stroke: 1.5px rgb(230, 109, 109) ;
+   
+}
+.ctg-btn1{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(143, 119, 91);
+    font-weight: bold;
+    border-color: rgb(143, 119, 91);;
+    transition: 200ms;
+    font-size: 38px;
+    background-image: url("image/boy.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(241, 199, 162);
+    -webkit-text-stroke: 1.5px rgb(82, 80, 80) ;
+   
+}
+
+
+
+.ctg-btn2{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(143, 119, 91);
+    font-weight: bold;
+    border-color: rgb(143, 119, 91);;
+    transition: 200ms;
+    font-size: 38px;
+    background-image: url("image/girls.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(241, 199, 162);
+    -webkit-text-stroke: 1.5px rgb(82, 80, 80) ;
+}
+
+.ctg-btn:hover{
+    transform: scale(1.1) ;
+}
+
+.hw-apply{
+    margin-left: 150px;
+    margin-top: 100px; 
+}
+
+.hw-apply h5{
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: #aeaeae;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footer {
+    background: #333;
+    color: #fdebdb;
+    padding: 20px 0;
+    text-align: center;
+}
