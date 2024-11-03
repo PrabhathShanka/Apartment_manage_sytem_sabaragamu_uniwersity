@@ -29,6 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $accommodation = $_POST['accommodation'];
     $parking = $_POST['parking'];
 
+
+
     // Handle image upload
     if ($_FILES["image"]["error"] === 4) {
         echo "<script> alert('Image Does Not Exist')</script>";
@@ -40,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $validImageExtension = ['jpg', 'jpeg', 'png'];
         $imageExtension = explode('.', $fileName);
         $imageExtension = strtolower(end($imageExtension));
-        
+
         if (!in_array($imageExtension, $validImageExtension)) {
             echo "<script> alert('Invalid Image Extension');</script>";
         } else if ($fileSize > 1000000) {
@@ -70,4 +72,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
-?>

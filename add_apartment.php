@@ -170,75 +170,110 @@ if (isset($_SESSION['email'])) {
       <div class="radio-group">
         <label>Common Washroom:</label>
         <div class="radio-option">
-          <input type="radio" name="private_bathroom" value="YES" required> INCLUDED
+          <input type="radio" name="private_bathroom" value="INCLUDED" required> INCLUDED
         </div>
         <div class="radio-option">
-          <input type="radio" name="private_bathroom" value="NO" required> NOT INCLUDED
+          <input type="radio" name="private_bathroom" value="NOT INCLUDED" required> NOT INCLUDED
         </div>
       </div>
 
       <div class="radio-group">
         <label>Private Washroom:</label>
         <div class="radio-option">
-          <input type="radio" name="toilet" value="YES" required> INCLUDED
+          <input type="radio" name="toilet" value="INCLUDED" required> INCLUDED
         </div>
         <div class="radio-option">
-          <input type="radio" name="toilet" value="NO" required> NOT INCLUDED
+          <input type="radio" name="toilet" value="NOT INCLUDED" required> NOT INCLUDED
         </div>
       </div>
 
       <div class="radio-group">
         <label>Room Amenities - Bed:</label>
         <div class="radio-option">
-          <input type="radio" name="room_bed" value="YES" required> INCLUDED
+          <input type="radio" name="room_bed" value="INCLUDED" required> INCLUDED
         </div>
         <div class="radio-option">
-          <input type="radio" name="room_bed" value="NO" required> NOT INCLUDED
+          <input type="radio" name="room_bed" value="NOT INCLUDED" required> NOT INCLUDED
         </div>
       </div>
 
       <div class="radio-group">
         <label>Room Amenities - Mattress:</label>
         <div class="radio-option">
-          <input type="radio" name="room_mattress" value="YES" required> INCLUDED
+          <input type="radio" name="room_mattress" value="INCLUDED" required> INCLUDED
         </div>
         <div class="radio-option">
-          <input type="radio" name="room_mattress" value="NO" required> NOT INCLUDED
+          <input type="radio" name="room_mattress" value="NOT INCLUDED" required> NOT INCLUDED
         </div>
       </div>
 
       <div class="radio-group">
         <label>Room Amenities - Table:</label>
         <div class="radio-option">
-          <input type="radio" name="room_table" value="YES" required> INCLUDED
+          <input type="radio" name="room_table" value="INCLUDED" required> INCLUDED
         </div>
         <div class="radio-option">
-          <input type="radio" name="room_table" value="NO" required> NOT INCLUDED
+          <input type="radio" name="room_table" value="NOT INCLUDED" required> NOT INCLUDED
         </div>
       </div>
 
       <div class="radio-group">
         <label>Room Amenities - Chair:</label>
         <div class="radio-option">
-          <input type="radio" name="room_chair" value="YES" required> INCLUDED
+          <input type="radio" name="room_chair" value="INCLUDED" required> INCLUDED
         </div>
         <div class="radio-option">
-          <input type="radio" name="room_chair" value="NO" required> NOT INCLUDED
+          <input type="radio" name="room_chair" value="NOT INCLUDED" required> NOT INCLUDED
         </div>
       </div>
 
       <div class="radio-group">
         <label>Living Area - Dining Area:</label>
         <div class="radio-option">
-          <input type="radio" name="dining_area" value="YES" required> INCLUDED
+          <input type="radio" name="dining_area" value="INCLUDED" required> INCLUDED
         </div>
         <div class="radio-option">
-          <input type="radio" name="dining_area" value="NO" required> NOT INCLUDED
+          <input type="radio" name="dining_area" value="NOT INCLUDED" required> NOT INCLUDED
         </div>
       </div>
 
+
+      <div class="radio-group">
+        <label>Living Area - Sitting Area:</label>
+        <div class="radio-option">
+          <input type="radio" name="sitting_area" value="INCLUDED" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="sitting_area" value="NOT INCLUDED" required> NOT INCLUDED
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label>Accommodation:</label>
+        <div class="radio-option">
+          <input type="radio" name="accommodation" value="INCLUDED" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="accommodation" value="NOT INCLUDED" required> NOT INCLUDED
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label>Parking:</label>
+        <div class="radio-option">
+          <input type="radio" name="parking" value="INCLUDED" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="parking" value="NOT INCLUDED" required> NOT INCLUDED
+        </div>
+      </div>
+
+
+
+
       <input type="submit" value="Add Apartment">
-      <input type="button" onclick="location.href='index.php';" value="Cancel">
+      <input type="button" onclick="history.back();" value="Cancel">
+
     </form>
   </section>
 

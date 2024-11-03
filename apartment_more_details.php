@@ -50,7 +50,12 @@ $result = mysqli_query($conn, $query);
                         <h1 style="font-size: 28px; color: #333;"><?php echo $row["location"]; ?></h1>
                         <p style="font-size: 18px; margin: 10px 0;"><strong>Price:</strong> <?php echo $row["price"]; ?></p>
                         <p style="font-size: 18px; margin: 10px 0;"><strong>Contact Number:</strong> <?php echo $row["TeleNo"]; ?></p>
-                        <p style="font-size: 18px; margin: 10px 0;"><strong>GPS Code:</strong> <?php echo $row["gps_tag"]; ?></p>
+                        <p style="font-size: 18px; margin: 10px 0;">
+                            <strong>GPS Code:</strong>
+                            <a href="<?php echo $row['gps_tag']; ?>" target="_blank" style="color: #007bff; text-decoration: underline;">
+                                <?php echo $row['gps_tag']; ?>
+                            </a>
+                        </p>
                         <p style="font-size: 18px; margin: 10px 0;"><strong>Description:</strong> <?php echo $row["description"]; ?></p>
                     </div>
 
@@ -61,13 +66,13 @@ $result = mysqli_query($conn, $query);
                 </div>
 
                 <!-- Facilities Section -->
-                <div style="margin-top: 10px;">
-                    <h2 style="text-align: center; font-size: 50px; color: #333;">Facilities</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(5px, 1fr)); gap: 20px; margin-top: 10px;">
+                <div style="margin-top: 40px;">
+                    <h2 style="text-align: center; font-size: 40px; color: #333;">Facilities</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(5px, 1fr)); gap: 30px; margin-top: 10px;">
 
                         <!-- Bathroom -->
                         <div style="background-color: #f1f1f1; border-radius: 100px; text-align: center; padding: 20px;">
-                            <img src="assets/bath.png" alt="Room Amenities" style="width: 50px; height: 50px; border-radius: 10px;">
+                            <img src="assets/bath.png" alt="Room Amenities" style="width: 60px; height: 50px; border-radius: 10px;">
                             <p>Bathroom</p>
                             <p>Common Washroom: <?php echo $row["Private_bathroom"]; ?><br>Private Washroom: <?php echo $row["Toilet"]; ?></p>
                         </div>
