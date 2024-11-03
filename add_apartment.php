@@ -105,6 +105,32 @@ if (isset($_SESSION['email'])) {
       background-color: darkred;
     }
 
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background-color: #f8f9fa;
+    }
+
+    .radio-group label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .radio-option input[type="radio"] {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
     .footer {
       bottom: 0;
       width: 100%;
@@ -141,114 +167,83 @@ if (isset($_SESSION['email'])) {
 
       <h2>Select Facilities</h2>
 
-      <div class="row">
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Private Bathroom:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="private_bathroom" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="private_bathroom" value="NO" required> No
-          </span>
+      <div class="radio-group">
+        <label>Common Washroom:</label>
+        <div class="radio-option">
+          <input type="radio" name="private_bathroom" value="YES" required> INCLUDED
         </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Toilet:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="toilet" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="toilet" value="NO" required> No
-          </span>
-        </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Room Amenities - Bed:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="room_bed" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="room_bed" value="NO" required> No
-          </span>
-        </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Room Amenities - Mattress:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="room_mattress" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="room_mattress" value="NO" required> No
-          </span>
-        </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Room Amenities - Table:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="room_table" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="room_table" value="NO" required> No
-          </span>
-        </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Room Amenities - Chair:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="room_chair" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="room_chair" value="NO" required> No
-          </span>
-        </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Living Area - Dining Area:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="dining_area" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="dining_area" value="NO" required> No
-          </span>
-        </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Living Area - Sitting Area:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="sitting_area" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="sitting_area" value="NO" required> No
-          </span>
-        </div>
-
-        <div class="col-sm-12 col-lg-6 radio-group">
-          <label>Accommodation:</label><br>
-          <span class="mr-4">
-            <input type="radio" name="accommodation" value="YES" required> Yes
-          </span>
-          <span>
-            <input type="radio" name="accommodation" value="NO" required> No
-          </span>
+        <div class="radio-option">
+          <input type="radio" name="private_bathroom" value="NO" required> NOT INCLUDED
         </div>
       </div>
 
-      <!-- Button section with alignment -->
-      <div class="d-flex justify-content-between mt-4">
-        <!-- Left-aligned Go Back button -->
-        <input type="button" value="Go Back" onclick="window.location.href='index-AfterLoginApartmentOwner.php';"
-          style="background-color: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; width: 120px; height: 40px;" />
-
-        <!-- Right-aligned Submit button -->
-        <input type="submit" value="Submit"
-          style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; width: 120px; height: 40px;" />
+      <div class="radio-group">
+        <label>Private Washroom:</label>
+        <div class="radio-option">
+          <input type="radio" name="toilet" value="YES" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="toilet" value="NO" required> NOT INCLUDED
+        </div>
       </div>
 
+      <div class="radio-group">
+        <label>Room Amenities - Bed:</label>
+        <div class="radio-option">
+          <input type="radio" name="room_bed" value="YES" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="room_bed" value="NO" required> NOT INCLUDED
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label>Room Amenities - Mattress:</label>
+        <div class="radio-option">
+          <input type="radio" name="room_mattress" value="YES" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="room_mattress" value="NO" required> NOT INCLUDED
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label>Room Amenities - Table:</label>
+        <div class="radio-option">
+          <input type="radio" name="room_table" value="YES" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="room_table" value="NO" required> NOT INCLUDED
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label>Room Amenities - Chair:</label>
+        <div class="radio-option">
+          <input type="radio" name="room_chair" value="YES" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="room_chair" value="NO" required> NOT INCLUDED
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label>Living Area - Dining Area:</label>
+        <div class="radio-option">
+          <input type="radio" name="dining_area" value="YES" required> INCLUDED
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="dining_area" value="NO" required> NOT INCLUDED
+        </div>
+      </div>
+
+      <input type="submit" value="Add Apartment">
+      <input type="button" onclick="location.href='index.php';" value="Cancel">
     </form>
   </section>
 
   <div class="footer">
-    <p>&copy; 2024 Your Website. All rights reserved.</p>
+    <p>&copy; 2024 Apartment Rentals. All rights reserved.</p>
   </div>
 </body>
 
