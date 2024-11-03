@@ -41,6 +41,7 @@ if (isset($_POST["submitCustomer"])) {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -254,23 +255,23 @@ if (isset($_POST["submitCustomer"])) {
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="image/boarding_logo.jpg" alt="Your Image Description" style="
+    <img src="image/boarding_logo.jpg" alt="Your Image Description" style="
             width: 70px;
             height: 70px;
             vertical-align: middle;
             margin-left: 50px;
         " />
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto px-5">
-                <a class="nav-item nav-link mr-4" href="index.php">Home</a>
-                <a class="nav-item nav-link mr-4" href="login1.php">Sign In</a>
-                </li>
-            </div>
-        </div>
-    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto px-5">
+        <a class="nav-item nav-link mr-4" href="index.php">Home</a>
+        <a class="nav-item nav-link mr-4" href="login1.php">Sign In</a>
+        </li>
+      </div>
+    </div>
+  </nav>
 
 
 

@@ -17,6 +17,7 @@ $result = mysqli_query($conn, $query);
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,18 +37,21 @@ $result = mysqli_query($conn, $query);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             margin-top: 20px;
-            
+
         }
+
         .search-bar h3 {
             font-size: 24px;
             margin-bottom: 20px;
         }
+
         .search-bar form {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
         }
+
         .search-bar input[type="text"],
         .search-bar input[type="number"] {
             width: 200px;
@@ -55,8 +59,9 @@ $result = mysqli_query($conn, $query);
             border-radius: 5px;
             border: 1px solid white;
             font-size: 16px;
-            
+
         }
+
         .search-bar input[type="submit"] {
             padding: 10px 20px;
             background-color: #007bff;
@@ -67,143 +72,151 @@ $result = mysqli_query($conn, $query);
             font-size: 16px;
             transition: background-color 0.3s ease;
         }
+
         .search-bar input[type="submit"]:hover {
             background-color: #0056b3;
         }
-        
+
         /* Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            
+
         }
-        table th, table td {
+
+        table th,
+        table td {
             padding: 12px;
             border: 0px solid #ddd;
             text-align: left;
             background-color: #707b7c;
         }
+
         table th {
             background-color: #333;
             color: white;
         }
+
         table tr:nth-child(even) {
             background-color: #f4f4f4;
         }
+
         .cta-button {
             margin-bottom: 10px;
         }
 
-        .container, h2{
+        .container,
+        h2 {
             margin-top: 40px;
             margin-bottom: 50px;
         }
+
         .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 75px; /* Increased height to make it a bit taller */
-    background-color: #333;
-    z-index: 1000; /* To ensure it stays on top of other elements */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-}
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 75px;
+            /* Increased height to make it a bit taller */
+            background-color: #333;
+            z-index: 1000;
+            /* To ensure it stays on top of other elements */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+        }
 
-/* Navbar Content Styling */
-.navdiv {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px; /* Slightly increased padding */
-}
+        /* Navbar Content Styling */
+        .navdiv {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            /* Slightly increased padding */
+        }
 
-/* Navbar Image Styling */
-.navdiv img {
-    width: 60px;  /* Adjusted to fit the increased height */
-    height: 60px; /* Adjusted to fit the increased height */
-    vertical-align: middle;
-    margin-right: 10px;
-}
+        /* Navbar Image Styling */
+        .navdiv img {
+            width: 60px;
+            /* Adjusted to fit the increased height */
+            height: 60px;
+            /* Adjusted to fit the increased height */
+            vertical-align: middle;
+            margin-right: 10px;
+        }
 
-/* Navbar Links Styling */
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
+        /* Navbar Links Styling */
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
 
-.navbar li {
-    margin: 0 15px; /* Kept spacing the same for a balanced look */
-}
+        .navbar li {
+            margin: 0 15px;
+            /* Kept spacing the same for a balanced look */
+        }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px; /* Increased padding for more height */
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            /* Increased padding for more height */
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
 
-/* Button Styling */
-.navbar button {
-    background-color: #f00;
-    color: white;
-    border: none;
-    padding: 5px; /* Increased padding */
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+        /* Button Styling */
+        .navbar button {
+            background-color: #f00;
+            color: white;
+            border: none;
+            padding: 5px;
+            /* Increased padding */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
 
-.navbar button:hover {
-    background-color: #d00;
-}
+        .navbar button:hover {
+            background-color: #d00;
+        }
 
-body {
-    margin: 0;
-    padding-top: 75px; /* Match with the height of the navbar to prevent content overlap */
-}
+        body {
+            margin: 0;
+            padding-top: 75px;
+            /* Match with the height of the navbar to prevent content overlap */
+        }
     </style>
 </head>
+
 <body>
-    <!-- <nav class="navbar" id="navbar">
-        <div class="navdiv">
-            <img src="image/boarding_logo.jpg" alt="Your Image Description" style="width: 60px; height: 60px; vertical-align: middle; margin-right: 10px;">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#about">Apartment details</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button onclick="location.href='index.php'"><a>LOG OUT</a></button></li>
-            </ul>
-        </div>
-    </nav> -->
+
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5">
-    <img src="image/boarding_logo.jpg" alt="Your Image Description" style="
+        <img src="image/boarding_logo.jpg" alt="Your Image Description" style="
         width: 70px;
         height: 70px;
         vertical-align: middle;
         margin-left: 50px;
     " />
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto px-5">
-            <a class="nav-item nav-link mr-4" href="index.php">Home</a>
-            <a class="nav-item nav-link mr-4" href="#about">Apartment details</a> <!-- Changed to Apartment details -->
-            <a class="nav-item nav-link mr-4" href="#contact">Contact</a>
-            <a class="nav-item nav-link mr-4" href="index.php">Logout</a>
-            </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto px-5">
+                <a class="nav-item nav-link mr-4" href="index.php">Home</a>
+                <a class="nav-item nav-link mr-4" href="#about">Apartment details</a> <!-- Changed to Apartment details -->
+                <a class="nav-item nav-link mr-4" href="#contact">Contact</a>
+                <a class="nav-item nav-link mr-4" href="index.php">Logout</a>
+                </li>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
     <header class="hero-section">
@@ -217,11 +230,11 @@ body {
     <section id="about" class="about-section">
         <div class="container">
             <h2>Apartment Details</h2>
-            <a class="cta-button" href="add_apartment.php">ADD Apartment</a><br/><br/>
-            
-            
+            <a class="cta-button" href="add_apartment.php">ADD Apartment</a><br /><br />
+
+
             <!-- Apartments Table -->
-          <!-- <br/>  <h2><hr>List of Apartments <hr></h2> -->
+            <!-- <br/>  <h2><hr>List of Apartments <hr></h2> -->
             <table>
                 <thead>
 
@@ -231,43 +244,43 @@ body {
                     // Check if there are apartments to display
                     if (mysqli_num_rows($result) > 0) {
                         // Output data for each row
-                        while($row = mysqli_fetch_assoc($result)) { ?>
- 
+                        while ($row = mysqli_fetch_assoc($result)) { ?>
+
 
 
                             <tr>
-            <td style="text-align: center; vertical-align: middle;">
-                <h1><?php echo $row["location"]; ?>   (<?php echo $row["adminApproving"]; ?>)</h1><br>
-                <img src="images/<?php echo $row["image"]; ?>" width="600" height="400" title="<?php echo $row['image']; ?>"><br>
-                <h4>Price :- 
-                <?php echo $row["price"]; ?></h4>
-                <br>
-                <h4>Contact Number :-
-                <?php echo $row["TeleNo"]; ?></h4>
-                <br>
-                <h4>GPS Code :-
-                <?php echo $row["gps_tag"]; ?>
-                </h4>
-                <br>
-                
-                <h4>Discription <br>
-                <?php echo $row["description"]; ?></h4>
-                <br>
+                                <td style="text-align: center; vertical-align: middle;">
+                                    <h1><?php echo $row["location"]; ?> (<?php echo $row["adminApproving"]; ?>)</h1><br>
+                                    <img src="images/<?php echo $row["image"]; ?>" width="600" height="400" title="<?php echo $row['image']; ?>"><br>
+                                    <h4>Price :-
+                                        <?php echo $row["price"]; ?></h4>
+                                    <br>
+                                    <h4>Contact Number :-
+                                        <?php echo $row["TeleNo"]; ?></h4>
+                                    <br>
+                                    <h4>GPS Code :-
+                                        <?php echo $row["gps_tag"]; ?>
+                                    </h4>
+                                    <br>
 
-                <h2>
-                    <a href='apartment_owner_delete_apartment.php?Apartment_ID=<?php echo urlencode($row["Apartment_ID"]); ?>' style="color: #cb0404;">
-                    <b>DELETE</b>
-                     </a>
-                </h2>
+                                    <h4>Discription <br>
+                                        <?php echo $row["description"]; ?></h4>
+                                    <br>
 
-                    <br>
-                
-                    <hr style="border: 6px solid #fbfcfc; width: 100%;">
+                                    <h2>
+                                        <a href='apartment_owner_delete_apartment.php?Apartment_ID=<?php echo urlencode($row["Apartment_ID"]); ?>' style="color: #cb0404;">
+                                            <b>DELETE</b>
+                                        </a>
+                                    </h2>
 
-            
-            </td>
-        </tr>
-                            <?php
+                                    <br>
+
+                                    <hr style="border: 6px solid #fbfcfc; width: 100%;">
+
+
+                                </td>
+                            </tr>
+                    <?php
                         }
                     } else {
                         echo "<tr><td colspan='8'>No apartments found.</td></tr>";
@@ -305,6 +318,7 @@ body {
     </footer>
 
 </body>
+
 </html>
 
 <?php
